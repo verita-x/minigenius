@@ -2,27 +2,63 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8">
-    <title>MiniGenius FAQ</title>
-    <meta http-equiv="refresh" content="0; url=https://www.notion.so/MiniGenius-FAQ-25c17c72ed57805fbf47fd4bf16e095b?source=copy_link">
+    <title>MiniGenius - 미니지니어스</title>
     <style>
       body {
-        font-family: sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #fafafa;
+        color: #333;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        flex-direction: column;
-        background-color: #fafafa;
+        text-align: center;
       }
-      a {
-        color: #007aff;
+      h1 {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+      }
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+      }
+      .button {
+        display: inline-block;
+        padding: 12px 24px;
+        margin: 10px 0;
+        font-size: 1.1rem;
+        color: #fff;
+        background-color: #007aff;
+        border-radius: 8px;
         text-decoration: none;
-        font-size: 18px;
+        transition: background-color 0.2s;
+      }
+      .button:hover {
+        background-color: #005bb5;
+      }
+      .secondary {
+        background-color: #555;
+      }
+      .secondary:hover {
+        background-color: #333;
       }
     </style>
   </head>
   <body>
-    <p>잠시 후 <strong>FAQ 페이지</strong>로 이동합니다...</p>
-    <p><a href="https://www.notion.so/네_FAQ_URL">👉 직접 이동하려면 여기를 클릭하세요</a></p>
+    <h1>MiniGenius</h1>
+    <p>위대한 인물들의 루틴을 따라하는 루틴 관리 앱</p>
+
+    <!-- 앱스토어 다운로드 버튼 -->
+    <a class="button" href="https://apps.apple.com/app/idYOUR_APP_ID" target="_blank">
+      📲 App Store에서 다운로드
+    </a>
+
+    <!-- FAQ 버튼 -->
+    <a class="button secondary" href="https://www.notion.so/네_FAQ_URL" target="_blank">
+      ❓ FAQ 바로가기
+    </a>
   </body>
 </html>
