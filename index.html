@@ -12,10 +12,11 @@
         color: #333;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        height: 100vh;
         text-align: center;
+      }
+      header {
+        padding: 3rem 1rem 2rem;
       }
       h1 {
         font-size: 2.2rem;
@@ -45,20 +46,49 @@
       .secondary:hover {
         background-color: #333;
       }
+      .screenshots {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        padding: 2rem 1rem;
+        max-width: 1200px;
+      }
+      .screenshots img {
+        max-width: 280px; /* 한 장 크기 */
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.2s;
+      }
+      .screenshots img:hover {
+        transform: scale(1.05);
+      }
     </style>
   </head>
   <body>
-    <h1>MiniGenius</h1>
-    <p>위대한 인물들의 루틴을 따라하는 루틴 관리 앱</p>
+    <header>
+      <h1>MiniGenius</h1>
+      <p>위대한 인물들의 루틴을 따라하는 루틴 관리 앱</p>
 
-    <!-- 앱스토어 다운로드 버튼 -->
-    <a class="button" href="https://apps.apple.com/kr/app/minigenius/id6751554428" target="_blank">
-      📲 App Store에서 다운로드
-    </a>
+      <!-- 앱스토어 다운로드 버튼 -->
+      <a class="button" href="https://apps.apple.com/kr/app/minigenius/id6751554428" target="_blank">
+        📲 App Store에서 다운로드
+      </a>
 
-    <!-- FAQ 버튼 -->
-    <a class="button secondary" href="https://www.notion.so/MiniGenius-FAQ-25c17c72ed57805fbf47fd4bf16e095b?source=copy_link" target="_blank">
-      ❓ FAQ 바로가기
-    </a>
+      <!-- FAQ 버튼 -->
+      <a class="button secondary" href="https://www.notion.so/MiniGenius-FAQ-25c17c72ed57805fbf47fd4bf16e095b?source=copy_link" target="_blank">
+        ❓ FAQ 바로가기
+      </a>
+    </header>
+
+    <!-- 스크린샷 갤러리 -->
+    <section class="screenshots">
+      <img src="image2.jpg" alt="앱 스크린샷 1">
+      <img src="image3.jpg" alt="앱 스크린샷 2">
+      <img src="image4.jpg" alt="앱 스크린샷 3">
+      <img src="image5.jpg" alt="앱 스크린샷 4">
+      <img src="image6.jpg" alt="앱 스크린샷 5">
+    </section>
   </body>
 </html>
+
