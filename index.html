@@ -28,14 +28,15 @@
       }
       .button {
         display: inline-block;
-        padding: 12px 24px;
-        margin: 10px 0;
-        font-size: 1.1rem;
+        padding: 12px 20px;
+        font-size: 1rem;
         color: #fff;
         background-color: #007aff;
         border-radius: 8px;
         text-decoration: none;
         transition: background-color 0.2s;
+        min-width: 180px;
+        text-align: center;
       }
       .button:hover {
         background-color: #005bb5;
@@ -45,6 +46,12 @@
       }
       .secondary:hover {
         background-color: #333;
+      }
+      .button-row {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin: 8px 0;
       }
       .screenshots {
         display: flex;
@@ -70,21 +77,25 @@
       <h1>MiniGenius</h1>
       <p>천재들의 루틴으로 하루를 바꾸다, 자기계발 일상 루틴앱</p>
 
-      <!-- 앱스토어 다운로드 버튼 -->
-      <a class="button" href="https://apps.apple.com/kr/app/minigenius/id6751554428" target="_blank">
-        📲 App Store (Korea)
-      </a>
-      <a class="button" href="https://apps.apple.com/us/app/minigenius/id6751554428" target="_blank">
-        📲 App Store (US)
-      </a>
+      <!-- 한국 줄 -->
+      <div class="button-row">
+        <a class="button" href="https://apps.apple.com/kr/app/minigenius/id6751554428" target="_blank">
+          📲 App Store (Korea)
+        </a>
+        <a class="button secondary" href="https://www.notion.so/MiniGenius-FAQ-25c17c72ed57805fbf47fd4bf16e095b?source=copy_link" target="_blank">
+          ❓ FAQ - 한국어
+        </a>
+      </div>
 
-      <!-- FAQ 버튼 -->
-      <a class="button secondary" href="https://www.notion.so/MiniGenius-FAQ-25c17c72ed57805fbf47fd4bf16e095b?source=copy_link" target="_blank">
-        ❓ FAQ - 한국어
-      </a>
-      <a class="button secondary" href="https://www.notion.so/MiniGenius-FAQ-Frequently-Asked-Questions-26517c72ed5780648934e330162fba0b?source=copy_link" target="_blank">
-        ❓ FAQ - English
-      </a>
+      <!-- 영어 줄 -->
+      <div class="button-row">
+        <a class="button" href="https://apps.apple.com/us/app/minigenius/id6751554428" target="_blank">
+          📲 App Store (US)
+        </a>
+        <a class="button secondary" href="https://www.notion.so/MiniGenius-FAQ-Frequently-Asked-Questions-26517c72ed5780648934e330162fba0b?source=copy_link" target="_blank">
+          ❓ FAQ - English
+        </a>
+      </div>
     </header>
 
     <!-- 스크린샷 갤러리 -->
@@ -97,4 +108,5 @@
     </section>
   </body>
 </html>
+
 
