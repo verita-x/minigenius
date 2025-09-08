@@ -52,23 +52,42 @@
         justify-content: center;
         gap: 16px;
         margin: 8px 0;
+        flex-wrap: wrap;
       }
       .screenshots {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 16px;
-        padding: 2rem 1rem;
+        gap: 12px;
+        padding: 1rem;
         max-width: 1200px;
       }
       .screenshots img {
-        max-width: 280px; /* 한 장 크기 */
+        flex: 1 1 calc(20% - 12px); /* 5장일 때 자동 줄바꿈 고려 */
+        max-width: 100%;
+        height: auto;
         border-radius: 12px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         transition: transform 0.2s;
       }
       .screenshots img:hover {
         transform: scale(1.05);
+      }
+      .section-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+      }
+      @media (max-width: 768px) {
+        .screenshots img {
+          flex: 1 1 calc(45% - 12px); /* 태블릿/모바일에서는 2개씩 줄 */
+        }
+      }
+      @media (max-width: 480px) {
+        .screenshots img {
+          flex: 1 1 100%; /* 작은 화면에서는 1개씩 세로 배치 */
+        }
       }
     </style>
   </head>
@@ -99,15 +118,25 @@
       </div>
     </header>
 
-    <!-- 스크린샷 갤러리 -->
+    <!-- 한국어 스크린샷 -->
+    <div class="section-title">📱 한국어 스크린샷</div>
     <section class="screenshots">
-      <img src="image2.jpg" alt="앱 스크린샷 1">
-      <img src="image3.jpg" alt="앱 스크린샷 2">
-      <img src="image4.jpg" alt="앱 스크린샷 3">
-      <img src="image5.jpg" alt="앱 스크린샷 4">
-      <img src="image6.jpg" alt="앱 스크린샷 5">
+      <img src="image1.jpg" alt="한국어 스크린샷 1">
+      <img src="image2.jpg" alt="한국어 스크린샷 2">
+      <img src="image3.jpg" alt="한국어 스크린샷 3">
+      <img src="image4.jpg" alt="한국어 스크린샷 4">
+      <img src="image5.jpg" alt="한국어 스크린샷 5">
+    </section>
+
+    <!-- 영어 스크린샷 -->
+    <div class="section-title">📱 English Screenshots</div>
+    <section class="screenshots">
+      <img src="en-image1.jpg" alt="English screenshot 1">
+      <img src="en-image2.jpg" alt="English screenshot 2">
+      <img src="en-image3.jpg" alt="English screenshot 3">
+      <img src="en-image4.jpg" alt="English screenshot 4">
+      <img src="en-image5.jpg" alt="English screenshot 5">
     </section>
   </body>
 </html>
-
 
