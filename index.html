@@ -52,20 +52,16 @@
         justify-content: center;
         gap: 16px;
         margin: 8px 0;
-        flex-wrap: wrap;
       }
       .screenshots {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
-        gap: 12px;
-        padding: 1rem;
+        gap: 16px;
+        padding: 1rem 1rem;
         max-width: 1200px;
       }
       .screenshots img {
-        flex: 1 1 calc(20% - 12px); /* 5장일 때 자동 줄바꿈 고려 */
-        max-width: 100%;
-        height: auto;
+        max-width: 220px; /* 한 장 크기 */
         border-radius: 12px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         transition: transform 0.2s;
@@ -78,16 +74,6 @@
         font-weight: bold;
         margin-top: 2rem;
         margin-bottom: 0.5rem;
-      }
-      @media (max-width: 768px) {
-        .screenshots img {
-          flex: 1 1 calc(45% - 12px); /* 태블릿/모바일에서는 2개씩 줄 */
-        }
-      }
-      @media (max-width: 480px) {
-        .screenshots img {
-          flex: 1 1 100%; /* 작은 화면에서는 1개씩 세로 배치 */
-        }
       }
     </style>
   </head>
@@ -109,7 +95,7 @@
 
       <!-- 영어 줄 -->
       <div class="button-row">
-        <a class="button" href="https://apps.apple.com/app/minigenius/id6751554428" target="_blank">
+        <a class="button" href="https://apps.apple.com/us/app/minigenius/id6751554428" target="_blank">
           📲 App Store (US)
         </a>
         <a class="button secondary" href="https://www.notion.so/MiniGenius-FAQ-Frequently-Asked-Questions-26517c72ed5780648934e330162fba0b?source=copy_link" target="_blank">
